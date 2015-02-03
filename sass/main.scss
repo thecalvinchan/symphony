@@ -1,0 +1,93 @@
+@import "base";
+
+body {
+    background-color: $beige;
+    background-image: url('/img/assets/bg_pattern.jpg');
+    background-repeat: 0 0;
+}
+
+a:hover, a:active {
+    border-bottom: 2px dashed $body-font-color;
+}
+
+.sf-header {
+    text-align: center;
+    margin-bottom: 20px;
+    h1 {
+        text-transform: uppercase;
+        font-size: rem-calc(80);
+        @media #{$medium-up} {
+            font-size: rem-calc(140);
+        }
+    }
+}
+
+.sf-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    a {
+        display: inline-block;
+        margin: 0 10px;
+        color: $beige;
+        background-color: $grey3;
+        background-image: url('/img/assets/bg_distressed.jpg');
+        background-size: 70%;
+        background-position: 25% 50%;
+        background-repeat: 0 0;
+        padding: rem-calc(10);
+        height: rem-calc(20);
+        width: rem-calc(20);
+        border-radius: 50%;
+        border: 2px dashed transparent;
+        i {
+            font-size: rem-calc(20); 
+            line-height: rem-calc(20);
+        }
+        &:hover {
+            color: $grey3;
+            border: 2px dashed $grey3;
+            background: none;
+        }
+    }
+}
+
+.sf-cta {
+    text-align: center;
+    height: rem-calc(20);
+    h2 {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(100%);
+        -moz-transform: translateX(-50%) translateY(100%);
+        transform: translateX(-50%) translateY(100%);
+        text-transform: uppercase;
+        font-size: $h1-font-size - $h1-font-reduction;
+        opacity: 0;
+        height: rem-calc(20);
+        &.sf-placeholder {
+            display: block;
+            margin-top: 0;
+        }
+        &.sf-cta-visible {
+            opacity: 1;
+            -webkit-transform: translateX(-50%) translateY(0%);
+            -moz-transform: translateX(-50%) translateY(0%);
+            transform: translateX(-50%) translateY(0%);
+        }
+        @media #{$medium-up} {
+            font-size: $h1-font-size;
+        }
+        -webkit-transition: opacity 0.5s , -webkit-transform 0.5s;
+        -moz-transition: opacity 0.5s , -moz-transform 0.5s;
+        transition: opacity 0.5s , transform 0.5s;
+    }
+}
+
+.vertical-mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
