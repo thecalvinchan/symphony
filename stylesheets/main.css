@@ -106,14 +106,14 @@ h6 {
 
 /* line 133, ../sass/_base.scss */
 body {
-  font-family: "Courier Prime", "Courier New", Courier;
+  font-family: "courier_primeregular", "Courier New", Courier;
   font-size: 16px;
   color: #333;
 }
 
 /* line 138, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Press Style", "Helvetica Neue", Helvetica;
+  font-family: "press_styleregular", "Helvetica Neue", Helvetica;
   color: #333;
 }
 
