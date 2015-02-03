@@ -245,45 +245,6 @@ a:hover, a:active {
 }
 
 /* line 54, ../sass/main.scss */
-.sf-cta {
-  text-align: center;
-  height: 1.25rem;
-}
-/* line 57, ../sass/main.scss */
-.sf-cta h2 {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(100%);
-  -moz-transform: translateX(-50%) translateY(100%);
-  transform: translateX(-50%) translateY(100%);
-  text-transform: uppercase;
-  font-size: 2.125rem;
-  opacity: 0;
-  height: 1.25rem;
-  -webkit-transition: opacity 0.5s , -webkit-transform 0.5s;
-  -moz-transition: opacity 0.5s , -moz-transform 0.5s;
-  transition: opacity 0.5s , transform 0.5s;
-}
-/* line 67, ../sass/main.scss */
-.sf-cta h2.sf-placeholder {
-  display: block;
-  margin-top: 0;
-}
-/* line 71, ../sass/main.scss */
-.sf-cta h2.sf-cta-visible {
-  opacity: 1;
-  -webkit-transform: translateX(-50%) translateY(0%);
-  -moz-transform: translateX(-50%) translateY(0%);
-  transform: translateX(-50%) translateY(0%);
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 57, ../sass/main.scss */
-  .sf-cta h2 {
-    font-size: 2.75rem;
-  }
-}
-
-/* line 86, ../sass/main.scss */
 .vertical-mid {
   position: absolute;
   top: 50%;

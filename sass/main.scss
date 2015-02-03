@@ -51,38 +51,6 @@ a:hover, a:active {
     }
 }
 
-.sf-cta {
-    text-align: center;
-    height: rem-calc(20);
-    h2 {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%) translateY(100%);
-        -moz-transform: translateX(-50%) translateY(100%);
-        transform: translateX(-50%) translateY(100%);
-        text-transform: uppercase;
-        font-size: $h1-font-size - $h1-font-reduction;
-        opacity: 0;
-        height: rem-calc(20);
-        &.sf-placeholder {
-            display: block;
-            margin-top: 0;
-        }
-        &.sf-cta-visible {
-            opacity: 1;
-            -webkit-transform: translateX(-50%) translateY(0%);
-            -moz-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
-        }
-        @media #{$medium-up} {
-            font-size: $h1-font-size;
-        }
-        -webkit-transition: opacity 0.5s , -webkit-transform 0.5s;
-        -moz-transition: opacity 0.5s , -moz-transform 0.5s;
-        transition: opacity 0.5s , transform 0.5s;
-    }
-}
-
 .vertical-mid {
     position: absolute;
     top: 50%;
