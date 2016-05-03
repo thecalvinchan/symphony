@@ -92,7 +92,7 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 
 // SECTION: Colors
 
-$black: #000; 
+$black: #080808; 
 $grey1: #111;
 $grey2: #222;
 $grey3: #333;
@@ -118,10 +118,10 @@ $h5-font-reduction: 0 !default;
 $h6-font-reduction: 0 !default;
 
 // Font Families
-$header-font-family: "press_styleregular", "Helvetica Neue", Helvetica;
-$body-font-family: "courier_primeregular", "Courier New", Courier;
-$header-font-color: $grey3;
-$body-font-color: $grey3;
+$header-font-family: "Helvetica Neue", Helvetica;
+$body-font-family: Helvetica, "courier_primeregular", "Courier New", Courier;
+$header-font-color: $grey1;
+$body-font-color: $grey1;
 
 h1 { font-size: $h1-font-size - $h1-font-reduction; }
 h2 { font-size: $h2-font-size - $h2-font-reduction; }
