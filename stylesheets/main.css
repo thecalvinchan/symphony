@@ -185,7 +185,7 @@ a:link, a:visited {
 /* line 3, ../sass/main.scss */
 body {
   background-color: #080808;
-  background-image: url("/img/assets/bg.jpg");
+  background-image: url("../img/assets/bg.jpg");
   background-position: -30% -80%;
   background-size: 200%;
   background-attachment: fixed;
