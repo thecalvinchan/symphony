@@ -28,19 +28,7 @@ p̞̪̈́r͉͙̥̂̏̉̽̓ͦͩo̊̍̓̀̑̿̉ǰ̢͎̻̦̤͎ͩe̬͈̙̳͚͞c̃ͮ̎
               &middot;
               <a href="http://research.codificacoffee.com" class="sf-hov-show">codifica</a>
               &middot;
-              <a href="#" class="sf-hov-show" onclick="function() {
-                AirSwap.Trader.render({
-                  mode: 'buy',
-                  token: '0x27054b13b1b798b345b591a4d22e6562d47ea75a',
-                  env: 'production',
-                  onCancel: function () {
-                    console.info('Trade was canceled.');
-                  },
-                  onComplete: function(transactionId) {
-                    console.info('Trade complete. Thank you, come again.');
-                  }
-                }, 'body')
-              }">airswap</a>
+              <a href="#" class="sf-hov-show" onclick="loadAS">airswap</a>
             </p>
         </div>
     </header>
@@ -55,6 +43,21 @@ p̞̪̈́r͉͙̥̂̏̉̽̓ͦͩo̊̍̓̀̑̿̉ǰ̢͎̻̦̤͎ͩe̬͈̙̳͚͞c̃ͮ̎
       </div>
     </div>
     <script src="https://airswap-cdn.com/airswap-trader.js"></script>
+    <script>
+      window.loadAS = function() {
+        AirSwap.Trader.render({
+          mode: 'buy',
+          token: '0x27054b13b1b798b345b591a4d22e6562d47ea75a',
+          env: 'production',
+          onCancel: function () {
+            console.info('Trade was canceled.');
+          },
+          onComplete: function(transactionId) {
+            console.info('Trade complete. Thank you, come again.');
+          }
+        }, 'body')
+      }
+    </script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-35007967-1']);
